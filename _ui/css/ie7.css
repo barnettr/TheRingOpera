@@ -1,0 +1,103 @@
+﻿body.cycle {
+	background: #000000;
+	color: #fff;
+	line-height: 0.0em;
+}
+div#about-content-container div#cycle-main-content table#cycle-dates {
+    margin: 30px 0 0 0;
+    width: 571px;
+}
+.row-title {
+    height: 45px !important;
+    width:155px;
+}
+.row-one-bg {
+    background-color:#84a4ba;
+}
+.row-two-bg {
+    background-color: #aaafca;
+}
+.row-three-bg {
+    background-color: #b9a2a8;
+}
+.row-four-bg {
+    background-color: #c5bbab;
+}
+.row-sep {
+    height: 13px;
+    width:571px;
+}
+.opera-seven {
+    height: 45px !important;
+    width:155px;
+    background-color: #545d93;
+}
+.opera-seven-two {
+    height: 45px !important;
+    width:155px;
+    background-color: #724450;
+}
+.opera-seven-three {
+    height: 45px !important;
+    width:155px;
+    background-color: #8b7556;
+}
+.div-one { background-color: #074169;}
+.div-two {background-color: #84a4ba;}
+.div-three {background-color: #074169;}
+.cycle-one-title, cycle-two-title, cycle-three-title {
+    width:134px;
+}
+div#about-content-container div#about-main-content p.main-content { 
+    margin-top: 0px !important;
+}
+.silver {
+    position:absolute;
+    top:3px;
+    left:735px;
+}
+.gold {
+    position:absolute;
+    top:3px;
+    left:663px;
+}
+.diamond {
+    position:absolute;
+    top:3px;
+    left:590px;
+}
+.platinum {
+    position:absolute;
+    top:3px;
+    left:520px;
+}
+.sponsor {
+}
+.one {
+    position:absolute;
+    top:-28px;
+    left:62px;
+}
+.two {
+    position:absolute;
+    top:-28px;
+    left:117px;
+}
+.three {
+    position:absolute;
+    top:-28px;
+    left:172px;
+}
+.four {
+    position:absolute;
+    top:-28px;
+    left:229px;
+}
+div#about-content-container div#about-main-content p.ring-circle {
+    margin-top: -40px !important;
+}
+.chairs {margin-bottom:30px;}
+
+.seven-top {
+    margin-top: 55px !important;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+	<title></title>
+	<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.2.6.min.js"></script>
+	<script type="text/javascript">
+
+	$(document).ready(function () {
+
+		$('#dropdown').hover(
+		
+			function () {
+
+				//change the background of parent menu				
+				$('#dropdown li a.parent').addClass('hover');
+				
+				//display the submenu
+				$('#dropdown ul.children').show();
+				
+			},
+		
+			function () {
+
+				//change the background of parent menu
+				$('#dropdown li a.parent').removeClass('hover');			
+
+				//display the submenu
+				$('#dropdown ul.children').hide();
+				
+			}
+		
+		);
+		
+	});
+	
+
+	</script>
+	
+	<style type="text/css">
+	    body {
+		    font-family:arial;	
+	    }
+	    
+	    p {
+	        margin-top: 20px;
+	    }
+	
+	    a {
+		    text-decoration:none;
+		        color:#666;
+	    }
+	
+	    a:hover {
+		    color:#9c1c00;	
+	    }
+	
+	    #dropdown {
+		    /* cancel the default list style */
+		    list-style:none;
+		    margin:0;
+		    padding:0;
+		    width:180px;
+		    position:relative;
+	    }
+	
+	        #dropdown li {
+	        }
+	
+	            #dropdown li a.parent {
+		            display:block; 
+		            width:180px; height:40px;
+		            font-weight:700;
+		            padding:0 0 0 10px;
+		            line-height:35px;
+		            background:url(parent.gif) 0px 0px no-repeat;
+	            }
+	
+	            #dropdown li a.hover {
+		            background:url(parent.gif) 0px -40px no-repeat;	
+	            }
+	
+		            #dropdown ul {
+        			
+			            /* cancel the default list style */
+			            margin:0;
+			            padding:0;
+			            list-style:none;	
+			            display:none;
+        			
+			            /* make sure it has the highest z-index */
+			            position:absolute;
+			            left:0;
+			            z-index:500;
+			            background:#fff;
+			            width:180px;
+			            background:url(child.gif) left bottom no-repeat;
+		            }
+        		
+			            #dropdown ul li {
+				            font-size:11px;	
+			            }
+        			
+				            #dropdown ul li a {
+					            display:block; 
+					            font-weight:700;
+					            padding:0 0 0 10px;
+					            height:30px;
+					            color:#fff;
+				            }
+        				
+				            #dropdown ul li a:hover {
+					            color:#9c1c00;	
+				            }
+	</style>
+
+	
+</head>
+<body>
+
+<ul id="dropdown">
+	<li><a href="#" class="parent">RSS Subscription &raquo;</a>	
+		<ul class="children">
+			<li><a href="#">All Categories</a></li>
+			<li><a href="#">Ajax</a></li>
+			<li><a href="#">CSS & HTML</a></li>
+
+			<li><a href="#">Design</a></li>
+			<li><a href="#">Typography</a></li>
+			<li><a href="#">Javascript</a></li>
+			<li><a href="#">PHP & MySQL</a></li>
+			<li><a href="#">Wallpaper</a></li>
+			<li><a href="#">Wordpress</a></li>
+
+		</ul>
+	</li>
+</ul>
+<p>Page Content</p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿/*
+.className {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='FILEPATH GOES HERE - RELATIVE TO THE HTML DOC');			
+}
+
+*/
+
+#cycle-main-content {
+    margin-right:34px !important;
+}
+ul#navigation-transverse li#about-the-ring a {
+    margin-top:66px !important;
+}
+ul#navigation-transverse li#cycle-dates a {
+    position:absolute;
+    right:-110px !important;
+    top:6px !important;
+}
+ul#navigation-transverse li#support-the-ring a {
+    position:absolute;
+    right:-260px !important;
+    top:6px !important;
+}
+ul#navigation-transverse li#buy-packages a {
+    position:absolute;
+    right:-450px !important;
+    top:122px !important;
+}

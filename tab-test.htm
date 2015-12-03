@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Tabbed Menu with jQuery</title>
+	<style  type="text/css">
+	
+		@CHARSET "UTF-8";
+        /******* GENERAL RESET *******/
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+        font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+         tfoot, thead, tr, th, td {
+        border:0pt none;
+        font-family:inherit;
+        font-size: 100%;
+        font-style:inherit;
+        font-weight:inherit;
+        margin:0pt;
+        padding:0pt;
+        vertical-align:baseline;
+        }
+        body{
+	        background: #fff;
+	        line-height:14px;
+	        font-size: 12px;
+	        font-family: Arial,  Verdana, Helvetica, sans-serif;
+	        margin:0pt;
+	        cursor:default;
+	        overflow: hidden;
+        }
+        html,body{
+	        height:100%;
+	        text-align: center;
+        }
+        .clear{
+	        clear: both;
+	        height: 0;
+	        visibility: hidden;
+	        display: block;
+        }
+        a{
+	        text-decoration: none;
+        }
+        /******* GENERAL RESET *******/
+        /******* LOGO *******/
+        #logo{
+	        margin-top: 1em;
+	        display: block;
+        }
+        /******* /LOGO  *******/
+        /******* MENU *******/
+        #container{
+	        margin: 7em auto;
+	        width: 400px;
+        }
+        #container ul{
+	        list-style: none;
+	        list-style-position: outside;
+        }
+        #container ul.menu li{
+	        float: left;
+	        margin-right: 5px;
+	        margin-bottom: -1px;
+        }
+        #container ul.menu li{
+	        font-weight: 700;
+	        display: block;
+	        padding: 5px 10px 5px 10px;
+	        background: #efefef;
+	        margin-bottom: -1px;
+	        border: 1px solid #d0ccc9;
+	        border-width: 1px 1px 1px 1px;
+	        position: relative;
+	        color: #898989;
+	        cursor: pointer;
+        }
+        #container ul.menu li.active{
+	        background: #fff;
+	        top: 1px;
+	        border-bottom: 0;
+	        color: #5f95ef;
+        }
+        /******* /MENU *******/
+        /******* CONTENT *******/
+        .content{
+	        margin: 0pt auto;
+	        background: #efefef;
+	        background: #fff;
+	        border: 1px solid #d0ccc9;
+	        text-align: left;
+	        padding: 10px;
+	        padding-bottom: 20px;
+	        font-size: 11px;
+        }
+        .content h1{
+	        line-height: 1em;
+	        vertical-align: middle;
+	        height: 48px;
+	        padding: 10px 10px 10px 52px;
+	        font-size: 32px;
+        }
+        /******* /CONTENT *******/
+        /******* NEWS *******/
+        .content.news h1{
+	        background: transparent url(images/news.jpg) no-repeat scroll left top;
+        }
+        .content.news{
+	        display: block;
+        }
+        /******* /NEWS *******/
+        /******* TUTORIALS *******/
+        .content.tutorials h1{
+	        background: transparent url(images/tuts.jpg) no-repeat scroll left top;
+        }
+        .content.tutorials{
+	        display: none;
+        }
+        /******* /TUTORIALS *******/
+        /******* LINKS *******/
+        .content.links h1{
+	        background: transparent url(images/links.jpg) no-repeat scroll left top;
+        }
+        .content.links{
+	        display: none;
+        }
+        .content.links a{
+	        color: #5f95ef;
+        }
+        /******* /LINKS *******/
+	
+	</style>
+	
+</head>
+<body>
+	
+	<div id="container">
+		<ul class="menu">
+			<li id="news" class="active">News</li>
+			<li id="tutorials">Tutorials</li>
+			<li id="links">Links</li>
+		</ul>
+		<span class="clear"></span>
+		<div class="content news">
+			<h1>Latest News</h1>
+			<ul>
+				<li><img src="bullet.gif" alt="-" /> Boobles: First theme on Themeforest released!</li>
+				<li><img src="bullet.gif" alt="-" /> Cokidoo becomes official</li>
+				<li><img src="bullet.gif" alt="-" /> plusmusica.com private beta invitations</li>
+				<li><img src="bullet.gif" alt="-" /> yensdesign.com 2.0 launched!</li>
+			<ul>
+		</div>
+		<div class="content tutorials">
+			<h1>Latest Tutorials</h1>
+			<ul>
+				<li><img src="bullet.gif" alt="-" /> Top 10 free fonts for professional design</li>
+				<li><img src="bullet.gif" alt="-" /> Create an amazing music player using mouse gestures &amp;amp; hotkeys</li>
+				<li><img src="bullet.gif" alt="-" /> Boobles: First theme on Themeforest released!</li>
+				<li><img src="bullet.gif" alt="-" /> Creating AJAX websites based on anchor navigation</li>
+				<li><img src="bullet.gif" alt="-" /> Fast Tip: Create your personal blog to promote your self</li>
+				<li><img src="bullet.gif" alt="-" /> How to make a brilliant mysql forum database from scratch</li>
+			<ul>
+		</div>
+		<div class="content links">
+			<h1>You may visit</h1>
+			<ul>
+				<li><img src="bullet.gif" alt="-" /> <a href="http://www.plusmusica.com">www.plusmusica.com</a> - Online jukebox!</li>
+				<li><img src="bullet.gif" alt="-" /> <a href="http://www.cokidoo.com">www.cokidoo.com</a> - Awesome startup! :)</li>
+				<li><img src="bullet.gif" alt="-" /> <a href="http://www.cokidoo.com">www.pixelartgames.com</a> - Do you want pixel art games? ;)</li>
+				<li><img src="bullet.gif" alt="-" /> <a href="http://www.dmsconsulting.es">www.dmsconsulting.es</a> - Great guys</li>
+			<ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.2.6.min.js"></script>
+	<script type="text/javascript" language="javascript">
+	
+	    /***************************/
+        //@Author: Adrian "yEnS" Mato Gondelle & Ivan Guardado Castro
+        //@website: www.yensdesign.com
+        //@email: yensamg@gmail.com
+        //@license: Feel free to use it, but keep this credits please!
+        /***************************/
+
+        $(document).ready(function(){
+	        $(".menu > li").click(function(e){
+		        switch(e.target.id){
+			        case "news":
+				        //change status & style menu
+				        $("#news").addClass("active");
+				        $("#tutorials").removeClass("active");
+				        $("#links").removeClass("active");
+				        //display selected division, hide others
+				        $("div.news").fadeIn();
+				        $("div.tutorials").css("display", "none");
+				        $("div.links").css("display", "none");
+			        break;
+			        case "tutorials":
+				        //change status & style menu
+				        $("#news").removeClass("active");
+				        $("#tutorials").addClass("active");
+				        $("#links").removeClass("active");
+				        //display selected division, hide others
+				        $("div.tutorials").fadeIn();
+				        $("div.news").css("display", "none");
+				        $("div.links").css("display", "none");
+			        break;
+			        case "links":
+				        //change status & style menu
+				        $("#news").removeClass("active");
+				        $("#tutorials").removeClass("active");
+				        $("#links").addClass("active");
+				        //display selected division, hide others
+				        $("div.links").fadeIn();
+				        $("div.news").css("display", "none");
+				        $("div.tutorials").css("display", "none");
+			        break;
+		        }
+		        //alert(e.target.id);
+		        return false;
+	        });
+        });
+	
+	</script>
+</body>
+</html>

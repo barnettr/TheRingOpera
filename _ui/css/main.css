@@ -1,0 +1,1086 @@
+﻿/*	-----------------------------------------------
+
+	Resets And Primitives
+
+	----------------------------------------------- */
+
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,iframe {
+	padding:0;
+	margin:0;
+}
+
+body.home {
+	background: #000000;
+	color: #fff;
+	line-height: 1.6em;
+}
+
+body.about {
+	background: #000000;
+	color: #fff;
+	line-height: 1.6em;
+}
+body.cycle {
+	background: #000000;
+	color: #fff;
+	line-height: 1.6em;
+}
+
+div#content-wrapper {
+    margin: 0 auto;
+    width:1000px;
+    position:relative;
+    background: #000 url(../../_ui/_img/home-background.jpg) center bottom no-repeat;
+	width: 1000px;
+	height:1100px;
+}
+
+div#about-wrapper {
+    margin: 0 auto;
+    width:1000px;
+    position:relative;
+    background: #000 url(../../_ui/_img/about-bg.jpg) center bottom no-repeat;
+	width: 1000px;
+	height:1100px;
+}
+div#diewalkure-wrapper {
+    margin: 0 auto;
+    width:1000px;
+    position:relative;
+    background: #000 url(../../_ui/_img/diewalkure-bg.jpg) center bottom no-repeat;
+	width: 1000px;
+	height:1100px;
+}
+div#dasrheingold-wrapper {
+    margin: 0 auto;
+    width:1000px;
+    position:relative;
+    background: #000 url(../../_ui/_img/dasrheingold-bg.jpg) center bottom no-repeat;
+	width: 1000px;
+	height:1100px;
+}
+div#siegfried-wrapper {
+    margin: 0 auto;
+    width:1000px;
+    position:relative;
+    background: #000 url(../../_ui/_img/siegfried-bg.jpg) center bottom no-repeat;
+	width: 1000px;
+	height:1100px;
+}
+div#gotterdammerung-wrapper {
+    margin: 0 auto;
+    width:1000px;
+    position:relative;
+    background: #000 url(../../_ui/_img/gotterdammerung-bg.jpg) center bottom no-repeat;
+	width: 1000px;
+	height:1100px;
+}
+div#cycle-wrapper {
+    margin: 0 auto;
+    width:1000px;
+    position:relative;
+    background: #000 url(../../_ui/_img/cycle-bg.jpg) center bottom no-repeat;
+	width: 1000px;
+	height:1100px;
+}
+
+h1,h2,h3,h4,h5,h6 { font-weight:bold; }
+
+h1 { 
+	font-size: 1em; 
+	line-height: 1em;
+}
+
+h2 {
+	font-size: 1em;
+	line-height: 1em;
+}
+
+h3 { 
+	font-size: 1em; 
+	line-height: 1em;
+}
+
+h4 { 
+	font-size: 1em; 
+	line-height: 1em;
+}
+
+h5 {
+	font-size: 1em; 
+	line-height: 1em;
+}
+
+h6 {
+	font-size: 1em; 
+	line-height: 1em;
+}
+
+p { 
+	font-size: 1em; 
+	line-height: 1em;
+}
+
+address,caption,cite,code,dfn,th,var { 
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+ul,ol { 
+	list-style: none; 
+}
+
+a { 
+	color: #000;
+	text-decoration: underline; 
+}
+
+a:hover {
+
+}
+
+abbr,img { 
+	border: 0; 
+}
+
+strong { 
+	font-weight: bold;
+}
+
+em {
+	font-style: italic; 
+}
+
+table {
+	border-collapse: collapse;
+}
+
+caption,th,td {
+	text-align: left;
+	font-weight: normal;
+}
+
+
+/*	-----------------------------------------------
+
+	Custom Primitives
+
+	----------------------------------------------- */
+
+
+div.hr { 
+	height: 1px;
+	border-top: 1px solid #000;
+	overflow: hidden;
+	clear: both;
+}
+	div.hr hr {
+		display: none;
+	}
+
+div.clear {
+	clear: both;
+	height: 1px;
+	overflow: hidden;	
+	margin-top: -1px;	
+}
+
+
+/*	-----------------------------------------------
+
+	Utility Classes
+
+	----------------------------------------------- */
+
+
+.left { float: left; }
+.right { float: right; }
+.invisible { display: none; }
+
+.offscreen {
+	display: block;
+	left: -999999em;
+	position: absolute;
+	top: -999999em;
+}
+
+.clear:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0px;
+	margin-top: -1px;
+	visibility: hidden;
+}
+
+li.seperator {
+    color:#666666;
+    float: left;
+    display:inline; 
+    position:relative;
+    margin: -10px 14px 0 0;
+}
+li.seperate {
+    color:#fff;
+    float: left;
+    display:inline; 
+    position:relative;
+    margin: 0 6px 0 6px;
+}
+.lheight {line-height:20px;}
+
+div.divider-small { height: 20px; }
+div.divider-xsmall { height:10px; }
+
+
+ /* MAIN NAVIGATION
+ * ------------------------------------------------------------------------- */
+
+div#main-navigation-container {
+    position: absolute;
+    top: 470px;
+    left: 16px;
+    height: 112px;    
+}
+
+ul#navigation-transverse {
+    list-style-type: none;    
+}
+    ul#navigation-transverse li {
+        float: left;
+        
+    }
+    ul#navigation-transverse li#rheingold a {
+        float:left;
+        background-image: url(../../_ui/_img/nav/operas-navigation.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        width: 78px;
+        height: 112px;
+        margin-right: 12px;
+        cursor: pointer;
+        position:relative;
+        overflow:visible;
+        z-index:4;
+    }
+     ul#navigation-transverse li#rheingold a span {
+        position:absolute;
+        height: 24px;
+        width: 130px;
+        color: #000;
+        font-family: Verdana, Helvetica, Verdana, sans-serif;
+        font-size: 14px;
+        font-weight:bold;
+        display:none;
+        bottom: 0px;
+        left: 0px;
+     }
+        ul#navigation-transverse li#rheingold a:hover
+        {
+            background-position: 0 -112px;
+            background-repeat:no-repeat;
+            text-decoration:none;    
+        }
+        ul#navigation-transverse li#rheingold a:hover span {
+            display:block;
+            height: 24px;
+            width: 130px;
+            background-color: #ebc441;
+            padding-left:4px;
+        }
+        ul#navigation-transverse li#rheingold a.nav-on {
+            background-image: url(../../_ui/_img/nav/rheingold-on.png);
+            background-position: 0 0 !important;
+            background-repeat: no-repeat;
+            width: 78px;
+            height: 112px;
+        }
+        
+    ul#navigation-transverse li#walkure a {
+        float:left;
+        background-image: url(../../_ui/_img/nav/operas-navigation.png);
+        background-position: -78px 0 !important;
+        background-repeat: no-repeat;
+        width: 78px;
+        height: 112px;
+        margin-right: 12px;
+        cursor: pointer;
+        position:relative;
+        overflow:visible;
+        z-index:3;
+    }
+    ul#navigation-transverse li#walkure a span {
+        position:absolute;
+        height: 24px;
+        width: 130px;
+        color: #000;
+        font-family: Verdana, Helvetica, Verdana, sans-serif;
+        font-size: 14px;
+        font-weight:bold;
+        display:none;
+        bottom: 0px;
+        left: 0px;
+    }
+        ul#navigation-transverse li#walkure a:hover
+        {
+            background-position: -78px -112px !important;
+            background-repeat:no-repeat;
+            text-decoration:none;  
+        }
+        ul#navigation-transverse li#walkure a:hover span {
+            display:block;
+            height: 24px;
+            width: 130px;
+            background-color: #ebc441;
+            padding-left:4px;
+        }
+        ul#navigation-transverse li#walkure a.nav-on {
+            background-image: url(../../_ui/_img/nav/walkure-on.png);
+            background-position: 0 0 !important;
+            background-repeat: no-repeat;
+            width: 78px;
+            height: 112px;
+        }
+        
+    ul#navigation-transverse li#siegfried a {
+        float:left;
+        background-image: url(../../_ui/_img/nav/operas-navigation.png);
+        background-position: -156px 0 !important;
+        background-repeat: no-repeat;
+        width: 78px;
+        height: 112px;
+        margin-right: 12px;
+        cursor: pointer;
+        position:relative;
+        overflow:visible;
+        z-index:2;
+    }
+    ul#navigation-transverse li#siegfried a span {
+        position:absolute;
+        height: 24px;
+        width: 130px;
+        color: #000;
+        font-family: Verdana, Helvetica, Verdana, sans-serif;
+        font-size: 14px;
+        font-weight:bold;
+        display:none;
+        bottom: 0px;
+        left: 0px;
+    }
+        ul#navigation-transverse li#siegfried a:hover
+        {
+            background-position: -156px -112px !important;
+            background-repeat:no-repeat;
+            text-decoration:none;     
+        }
+        ul#navigation-transverse li#siegfried a:hover span {
+            display:block;
+            height: 24px;
+            width: 130px;
+            background-color: #ebc441;
+            padding-left:4px;
+        }
+        ul#navigation-transverse li#siegfried a.nav-on {
+            background-image: url(../../_ui/_img/nav/siegfried-on.png);
+            background-position: 0 0 !important;
+            background-repeat: no-repeat;
+            width: 78px;
+            height: 112px;
+        }
+        
+    ul#navigation-transverse li#gotterdammerung a {
+        float:left;
+        background-image: url(../../_ui/_img/nav/operas-navigation.png);
+        background-position: -234px 0 !important;
+        background-repeat: no-repeat;
+        width: 78px;
+        height: 112px;
+        cursor: pointer;
+        position:relative;
+        overflow:visible;
+        z-index:1; 
+    }
+    ul#navigation-transverse li#gotterdammerung a span {
+        position:absolute;
+        height: 24px;
+        width: 130px;
+        color: #000;
+        font-family: Verdana, Helvetica, Verdana, sans-serif;
+        font-size: 14px;
+        font-weight:bold;
+        display:none;
+        bottom: 0px;
+        left: 0px;
+    }
+        ul#navigation-transverse li#gotterdammerung a:hover
+        {
+            background-position: -234px -112px !important;
+            background-repeat:no-repeat;
+            text-decoration:none;
+        }
+        ul#navigation-transverse li#gotterdammerung a:hover span {
+            display:block;
+            height: 24px;
+            width: 144px;
+            background-color: #ebc441;
+            padding-left:4px;
+        }
+        ul#navigation-transverse li#gotterdammerung a.nav-on {
+            background-image: url(../../_ui/_img/nav/gotterdammerung-on.png);
+            background-position: 0 0 !important;
+            background-repeat: no-repeat;
+            width: 78px;
+            height: 112px;
+        }
+        
+    ul#navigation-transverse li#about-the-ring a {
+        float:left;
+        background-image: url(../../_ui/_img/nav/about-the-ring.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        width: 105px;
+        height: 16px;
+        margin-left:62px;
+        margin-top:62px;
+    }
+        ul#navigation-transverse li#about-the-ring a:hover,
+        ul#navigation-transverse li#about-the-ring a.nav-on
+        {
+            background-position: 0 -16px;
+            background-repeat:no-repeat; 
+        }
+        
+    ul#navigation-transverse li#cycle-dates a {
+        float:left;
+        background-image: url(../../_ui/_img/nav/cycle-dates.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        width: 78px;
+        height: 16px;
+        margin-left:40px;
+        margin-top:62px;
+    }
+        ul#navigation-transverse li#cycle-dates a:hover,
+        ul#navigation-transverse li#cycle-dates a.nav-on
+        {
+            background-position: 0 -16px;
+            background-repeat:no-repeat; 
+        }
+        
+    ul#navigation-transverse li#support-the-ring a {
+        float:left;
+        background-image: url(../../_ui/_img/nav/support-the-ring.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        width: 117px;
+        height: 16px;
+        margin-left:34px;
+        margin-top:62px;
+    }
+        ul#navigation-transverse li#support-the-ring a:hover,
+        ul#navigation-transverse li#support-the-ring a.nav-on
+        {
+            background-position: 0 -16px;
+            background-repeat:no-repeat; 
+        }
+        
+    ul#navigation-transverse li#buy-packages a {
+        float:left;
+        background-image: url(../../_ui/_img/nav/buy-packages.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        width: 112px;
+        height:30px;
+        margin-left:833px;
+        margin-top:-60px;
+    }
+    
+    
+ /* ABOUT NAVIGATION
+ * ------------------------------------------------------------------------- */
+
+div#about-navigation-container {
+    position: absolute;
+    top: 115px;
+    left: 16px;
+    height: 112px;    
+}
+
+ /* ABOUT PAGE
+ * ------------------------------------------------------------------------- */
+
+div#about-content-container {
+    width:940px;
+    height:630px;
+    margin: 268px 0 0 32px;
+    position:relative;
+}
+    div#about-content-container div#about-sub-nav {
+        display:inline;
+        width: 249px;
+    }
+    div#about-content-container div#support-sub-nav {
+        display:inline;
+        width: 277px;
+    }
+        div#about-content-container #about-sub-nav img.sub-title {
+            height: 36px;
+            width: 249px;
+            border:0;
+            margin-top:16px;
+        }
+        div#about-content-container #about-sub-nav img.support-ring {
+            height: 34px;
+            width: 277px;
+            border:0;
+            margin-top:16px;
+        }
+        div#about-content-container #about-sub-nav img.production-credits {
+            height: 32px;
+            width: 299px;
+            border:0;
+            margin-top:16px;
+        }
+        div#about-content-container #about-sub-nav img.story-title {
+            height: 42px;
+            width: 190px;
+            border:0;
+            margin-top:16px;
+        }
+        div#about-content-container #about-sub-nav img.diewalkure-title {
+            height: 30px;
+            width: 194px;
+            border:0;
+            margin-top:16px;
+            margin-bottom:15px;
+        }
+        div#about-content-container #about-sub-nav img.dasrheingold-title {
+            height: 38px;
+            width: 227px;
+            border:0;
+            margin-top:16px;
+        }
+        div#about-content-container #about-sub-nav img.siegfried-title {
+            height: 39px;
+            width: 141px;
+            border:0;
+            margin-top:16px;
+        }
+        div#about-content-container #about-sub-nav img.gotterdammerung-title {
+            height: 39px;
+            width: 296px;
+            border:0;
+            margin-top:16px;
+        }
+        div#about-content-container #about-sub-nav img.cycle-title {
+            height: 37px;
+            width: 181px;
+            border:0;
+            margin-top:16px;
+        }
+        div#about-content-container div#about-main-content img.nibelung {
+            height: 24px;
+            width: 390px;
+            border:0;
+            margin-top:238px;
+        }
+        
+         #fieldset-one {
+            color: #ffffff;
+            font-family: Arial, Helvetica, Verdana, sans-serif;
+            font-size: 14px;
+            font-weight:normal;
+            margin-top:53px;
+         }
+         
+         ol#sub-nav {
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            width: 206px;
+            height:auto;
+            line-height: 0.0em !important; 
+         }
+         .blue {
+            background-image: url(../../_ui/_img/sub-nav/ol-bg.png);
+            background-repeat:repeat-y;
+         }
+         .walk {
+            background-image: url(../../_ui/_img/sub-nav/ol-bg-walk.png);
+            background-repeat:repeat-y;
+         }
+         .purple {
+            background-image: url(../../_ui/_img/sub-nav/ol-bg-rhein.png);
+            background-repeat:repeat-y;
+         }
+         .sieg {
+            background-image: url(../../_ui/_img/sub-nav/ol-bg-sieg.png);
+            background-repeat:repeat-y;
+         }
+         .green {
+            background-image: url(../../_ui/_img/sub-nav/ol-bg-green.png);
+            background-repeat:repeat-y;
+         }
+            ol#sub-nav li a {
+                display: block;
+                margin: 0px 0px 0px 0px;
+                width: 206px;
+                height: 18px;
+                cursor: pointer;
+                background-position: 0 0;
+                background-repeat: no-repeat; 
+            }
+                ol#sub-nav li a:hover,
+                ol#sub-nav li a.on {
+                    background-position: 0 -18px;
+                    background-repeat:no-repeat;
+                }
+            ol#sub-nav li#sub-cycle a {
+                background-image: url(../../_ui/_img/sub-nav/sub-cycle.png);
+            }
+            ol#sub-nav li#sub-story a {
+                background-image: url(../../_ui/_img/sub-nav/sub-story.png);
+            }
+            ol#sub-nav li#sub-credits a {
+                background-image: url(../../_ui/_img/sub-nav/sub-credits.png);
+            }
+            ol#sub-nav li#sub-conductor a {
+                background-image: url(../../_ui/_img/sub-nav/sub-conductor.png);
+            }
+            ol#sub-nav li#sub-director a {
+                background-image: url(../../_ui/_img/sub-nav/sub-director.png);
+            }
+            ol#sub-nav li#sub-opera-circle a {
+                background-image: url(../../_ui/_img/sub-nav/sub-opera-circle.png);
+            }
+            ol#sub-nav li#sub-patron a {
+                background-image: url(../../_ui/_img/sub-nav/sub-patron.png);
+            }
+            ol#sub-nav li#sub-synopsis a {
+                background-image: url(../../_ui/_img/sub-nav/sub-synopsis.png);
+            }
+            ol#sub-nav li#sub-cast a {
+                background-image: url(../../_ui/_img/sub-nav/sub-cast.png);
+            }
+            ol#sub-nav li#sub-watch a {
+                background-image: url(../../_ui/_img/sub-nav/sub-watch.png);
+            }
+            ol#sub-nav li#sub-talks a {
+                background-image: url(../../_ui/_img/sub-nav/sub-talks.png);
+            }
+            ol#sub-nav li#sub-dasrheingold a {
+                background-image: url(../../_ui/_img/sub-nav/sub-dasrheingold.png);
+            }
+            ol#sub-nav li#sub-dasrheingold-cast a {
+                background-image: url(../../_ui/_img/sub-nav/sub-dasrheingold-cast.png);
+            }
+            ol#sub-nav li#sub-dasrheingold-watch a {
+                background-image: url(../../_ui/_img/sub-nav/sub-dasrheingold-watch.png);
+            }
+            ol#sub-nav li#sub-dasrheingold-talks a {
+                background-image: url(../../_ui/_img/sub-nav/sub-dasrheingold-talks.png);
+            }
+            ol#sub-nav li#sub-siegfried a {
+                background-image: url(../../_ui/_img/sub-nav/sub-siegfried.png);
+            }
+            ol#sub-nav li#sub-siegfried-cast a {
+                background-image: url(../../_ui/_img/sub-nav/sub-siegfried-cast.png);
+            }
+            ol#sub-nav li#sub-siegfried-watch a {
+                background-image: url(../../_ui/_img/sub-nav/sub-siegfried-watch.png);
+            }
+            ol#sub-nav li#sub-siegfried-talks a {
+                background-image: url(../../_ui/_img/sub-nav/sub-siegfried-talks.png);
+            }
+            ol#sub-nav li#sub-gotterdammerung a {
+                background-image: url(../../_ui/_img/sub-nav/sub-gotterdammerung.png);
+            }
+            ol#sub-nav li#sub-gotterdammerung-cast a {
+                background-image: url(../../_ui/_img/sub-nav/sub-gotterdammerung-cast.png);
+            }
+            ol#sub-nav li#sub-gotterdammerung-watch a {
+                background-image: url(../../_ui/_img/sub-nav/sub-gotterdammerung-watch.png);
+            }
+            ol#sub-nav li#sub-gotterdammerung-talks a {
+                background-image: url(../../_ui/_img/sub-nav/sub-gotterdammerung-talks.png);
+            }
+                
+    .push {margin-top:62px; width:480px;}
+    div#about-content-container div#about-main-content {
+        display:inline;
+        width: 500px;
+        float:right;
+        margin: -140px 0 0 0;
+    }
+    
+         div#about-content-container div#about-main-content p.banner-caption {
+            color: #ffffff;
+            font-family: Arial, Helvetica, Verdana, sans-serif;
+            font-size: 18px;
+            font-weight:bold;
+            line-height: 22px;
+            width: 480px;   
+            margin-bottom:20px;
+            margin-top:47px;
+         }
+         div#about-content-container div#about-main-content p.about-caption {
+            color: #ffffff;
+            font-family: Arial, Helvetica, Verdana, sans-serif;
+            font-size: 18px;
+            font-weight:bold;
+            line-height: 22px;
+            width: 480px;   
+            margin-bottom:20px;
+            margin-top:15px;
+         }
+         div#about-content-container div#about-main-content p.main-content {
+            color: #ffffff;
+            font-family: Arial, Helvetica, Verdana, sans-serif;
+            font-size: 14px;
+            font-weight:normal;
+            width: 480px;
+            margin-top:10px;
+            margin-bottom:20px;
+         }
+         div#about-content-container div#about-main-content p.patron-content {
+            color: #ffffff;
+            font-family: Arial, Helvetica, Verdana, sans-serif;
+            font-size: 12px;
+            font-weight:normal;
+            width: 480px;
+            margin-top:15px;
+         }
+         
+         ul#support-options {
+            list-style-type:none;
+            font-family: Arial, Helvetica, Verdana, sans-serif;
+            font-size: 14px;
+            font-weight:normal;
+         }
+         ul#support-options li a {
+            float:left;
+            cursor: pointer;
+            color: #fff;
+            text-decoration: underline; 
+        }
+            ul#support-options li a:hover,
+            ul#support-options li a.nav-on {
+                float:left;
+                cursor: pointer;
+                color: #e8c241 !important;
+                text-decoration: underline;
+            }
+            
+         div#about-content-container div#about-main-content div.divider {
+            height: 28px;
+         } 
+         div#about-content-container div#about-main-content p.ring-circle {
+            color: #ffffff;
+            font-family: Arial, Helvetica, Verdana, sans-serif;
+            font-size: 16px;
+            font-weight:bold;
+            width: 480px;
+            line-height: 20px;
+            margin-top:20px;
+         }
+         div#about-content-container div#about-main-content p.patron-circle {
+            color: #ffffff;
+            font-family: Arial Narrow, Helvetica, Verdana, sans-serif;
+            font-size: 24px;
+            font-weight:bold;
+            width: 480px;
+            line-height: 20px;
+            margin-top:66px;
+         }
+         div#about-content-container div#about-main-content a.mail {
+            color: #e8c241;
+            font-family: Arial, Helvetica, Verdana, sans-serif;
+            font-size: 12px;
+            font-weight:normal;
+         }
+          div#about-content-container div#about-main-content p.chairs{
+            color: #ffffff;
+            font-family: Arial, Helvetica, Verdana, sans-serif;
+            font-size: 16px;
+            font-weight:normal;
+            width: 480px;
+            margin-top:6px;
+         }
+         
+         div#about-content-container div#about-main-content ul.insights {
+            margin:0;
+            padding:0;
+            list-style-type:disc;
+            line-height: 1.4em !important;
+            color: #ffffff;
+            font-family: Arial, Helvetica, Verdana, sans-serif;
+            font-size: 12px;
+            font-weight:normal;
+            width: 480px;
+            margin-left: 16px;
+         }
+            div#about-content-container div#about-main-content ul.insights li {
+                margin:0;
+                padding:0;
+            }
+         
+         div#about-content-container div#about-main-content ul#conductor {
+            list-style-type:none;
+            font-family: Arial, Helvetica, Verdana, sans-serif;
+            font-size: 14px;
+            font-weight:normal;
+         }
+            div#about-content-container div#about-main-content ul#conductor li {
+                float:left;
+                line-height:1.1em;
+            }
+            div#about-content-container div#about-main-content ul#conductor li.image {
+                width: 120px;
+            }
+            div#about-content-container div#about-main-content ul#conductor li.content {
+                width: 340px;
+                margin-left: 10px;
+            }
+            
+         
+          
+      div#about-content-container div#cycle-main-content {
+        display:inline;
+        width: 500px;
+        float:right;
+        margin: 21px 88px 0 0;
+      }
+          div#about-content-container div#cycle-main-content #cycle-dates-table {
+            margin: 30px 0 0 0;
+          }
+          
+.conductor {
+    height: 152px;
+    width: 120px;
+    border:0;
+}
+.director {
+    height: 142px;
+    width: 120px;
+    border:0;
+}
+.conductor-title {
+    color: #e8c241;
+}
+         
+         
+         
+
+
+
+
+/*	-----------------------------------------------
+
+	Chrome
+
+	----------------------------------------------- */
+
+
+
+/*	-----------------------------------------------
+
+	Widgets
+
+	----------------------------------------------- */
+
+
+
+ /* MAIN NAVIGATION
+ * ------------------------------------------------------------------------- */
+	
+
+/* home page */
+
+
+
+/* emd of home page */
+
+
+
+/* footer */
+
+    div#footer {
+        position:relative;
+        width: 940px;
+        text-align: left;
+        margin: 702px 0 0 34px;
+    }
+    div#about-footer {
+        position:relative;
+        width: 940px;
+        text-align: left;
+        margin: 70px 0 0 34px;
+    }
+    div#dasrheingold-footer {
+        position:relative;
+        width: 940px;
+        text-align: left;
+        margin: -60px 0 0 34px;
+    }
+        ul { 
+            list-style-type: none; 
+            margin-bottom:30px;
+        }
+        
+        ul li#footer-brochure { 
+            float: left;
+            display:inline; 
+            position:relative;
+            margin: 0 33px 0 0; 
+        }
+        
+        ul li#footer-brochure a {
+            float: left;
+			display: inline;
+			background-image: url(../../_ui/_img/footer/footer-brochure.png);
+            background-position: 0 0;
+            background-repeat: no-repeat;
+			width: 140px;
+			height: 13px;
+        }
+            ul li#footer-brochure a:hover {
+                background-position: 0 -13px;
+                background-repeat: no-repeat;
+                width: 140px;
+			    height: 17px;
+            }
+            
+        ul li#footer-ring-updates { 
+            float: left;
+            display:inline; 
+            position:relative;
+            margin: 0 192px 0 0; 
+        }
+            
+        ul li#footer-ring-updates a {
+            float: left;
+			display: inline;
+			background-image: url(../../_ui/_img/footer/footer-ring-updates.png);
+            background-position: 0 0;
+            background-repeat: no-repeat;
+			width: 128px;
+			height: 16px;
+        }
+            ul li#footer-ring-updates a:hover {
+                background-position: 0 -16px;
+                background-repeat: no-repeat;
+                width: 128px;
+			    height: 20px;
+            }
+            
+        ul li#footer-rheingold { 
+            float: left;
+            display:inline; 
+            position:relative;
+            margin: 0 10px 0 0; 
+        }
+            
+        ul li#footer-rheingold a {
+            float: left;
+			display: inline;
+			background-image: url(../../_ui/_img/footer/footer-rheingold.png);
+            background-position: 0 0;
+            background-repeat: no-repeat;
+			width: 95px;
+			height: 16px;
+        }
+            ul li#footer-rheingold a:hover {
+                background-position: 0 -16px;
+                background-repeat: no-repeat;
+                width: 95px;
+			    height: 20px;
+            }
+            
+        ul li#footer-walkure { 
+            float: left;
+            display:inline; 
+            position:relative;
+            margin: 0 10px 0 0; 
+        }
+            
+        ul li#footer-walkure a {
+            float: left;
+			display: inline;
+			background-image: url(../../_ui/_img/footer/footer-walkure.png);
+            background-position: 0 0;
+            background-repeat: no-repeat;
+			width: 79px;
+			height: 16px;
+        }
+            ul li#footer-walkure a:hover {
+                background-position: 0 -16px;
+                background-repeat: no-repeat;
+                width: 79px;
+			    height: 20px;
+            }
+            
+        ul li#footer-seigfried { 
+            float: left;
+            display:inline; 
+            position:relative;
+            margin: 0 10px 0 0; 
+        }
+            
+        ul li#footer-seigfried a {
+            float: left;
+			display: inline;
+			background-image: url(../../_ui/_img/footer/footer-seigfried.png);
+            background-position: 0 0;
+            background-repeat: no-repeat;
+			width: 58px;
+			height: 16px;
+        }
+            ul li#footer-seigfried a:hover {
+                background-position: 0 -16px;
+                background-repeat: no-repeat;
+                width: 58px;
+			    height: 20px;
+            }
+            
+        ul li#footer-gotterdammerung { 
+            float: left;
+            display:inline; 
+            position:relative;
+            margin: 0 10px 0 0; 
+        }
+            
+        ul li#footer-gotterdammerung a {
+            float: left;
+			display: inline;
+			background-image: url(../../_ui/_img/footer/footer-gotterdammerung.png);
+            background-position: 0 0;
+            background-repeat: no-repeat;
+			width: 123px;
+			height: 16px;
+        }
+            ul li#footer-gotterdammerung a:hover {
+                background-position: 0 -16px;
+                background-repeat: no-repeat;
+                width: 123px;
+			    height: 20px;
+            }
+         
+        
+        div.footer-wrap {
+            position:absolute;
+            top: 38px;
+        }
+        
+        p.footer-para {
+            color: #ffffff;
+            font-family: Arial, Helvetica, Verdana, sans-serif;
+            font-size: 12px;
+            font-weight:normal;
+        }
+        
+        
+
+
+
+/*  end of footer */
